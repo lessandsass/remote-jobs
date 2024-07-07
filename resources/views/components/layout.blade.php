@@ -10,18 +10,19 @@
 
     <title>Remote-Jobs</title>
 </head>
-<body>
+<body class="bg-black text-white">
 
-    <div>
+    <div class="px-10">
 
-        <nav>
+        <nav class="flex justify-between items-center py-4 border-b border-white/10">
+
             <div>
                 <a href="">
                     <x-logo />
                 </a>
             </div>
 
-            <div>
+            <div class="space-x-6 font-bold">
                 <a href="#">Jobs</a>
                 <a href="#">Careers</a>
                 <a href="#">Salaries</a>
@@ -33,8 +34,8 @@
             </div>
         </nav>
 
-        <main>
-
+        <main class="mt-10 max-w-[986px] mx-auto">
+            {{ $slot }}
         </main>
 
     </div>
