@@ -6,11 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <style>
+        body {
+            font-family: "Hanken Grotesk", sans-serif;
+        }
+    </style>
+
     @vite('resources/css/app.css')
 
     <title>Remote-Jobs</title>
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-white font-hanken-grotesk">
 
     <div class="px-10">
 
