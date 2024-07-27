@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Remote Jobs</title>
 </head>
 <body>
 
@@ -31,7 +31,7 @@
                 <x-section-heading>Featured Jobs</x-section-heading>
 
                 <div class="grid lg:grid-cols-3 gap-8 mt-6">
-                    @foreach($jobs as $job)
+                    @foreach($featuredJobs as $job)
                         <x-job-card :$job />
                     @endforeach
                 </div>
