@@ -10,11 +10,6 @@ use Illuminate\Validation\Rules\Password;
 
 class RegisteredUserController extends Controller
 {
-    public function index()
-    {
-
-    }
-
     public function create()
     {
         return view('auth.register');
@@ -37,29 +32,14 @@ class RegisteredUserController extends Controller
 
         $logoPath = $request->logo->store('logos');
 
+        $user->employer()->create([
+            'name' => $employerAttributes['employer'],
+            'logo' => $logoPath,
+        ]);
+
         Auth::login($user);
 
         return redirect('/');
 
-    }
-
-    public function show(string $id)
-    {
-        //
-    }
-
-    public function edit(string $id)
-    {
-        //
-    }
-
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    public function destroy(string $id)
-    {
-        //
     }
 }
