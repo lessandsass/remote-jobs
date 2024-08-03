@@ -16,7 +16,7 @@
 
     <title>Remote-Jobs</title>
 </head>
-<body class="bg-black text-white font-hanken-grotesk">
+<body class="bg-black text-white font-hanken-grotesk pb-10">
 
     <div class="px-10">
 

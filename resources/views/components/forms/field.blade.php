@@ -1,7 +1,7 @@
 @props(['label', 'name'])
 
 <div>
-    @if($label)
+    @if ($label)
         <x-forms.label :$name :$label />
     @endif
 
